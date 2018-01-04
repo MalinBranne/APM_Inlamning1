@@ -1,0 +1,75 @@
+
+.border
+
+{  padding: 0px;
+    border: solid 3px #F6A78B;
+}
+
+    .heroimg 
+    { 
+        img{margin-top: 5px;}
+    p {
+        padding: 10px;
+        font-size: 0.5em;
+        font-style: italic;
+      }
+    }
+    button {
+        @extend %btn;
+    }
+    
+
+    @include respond-to("large") {
+    .heroimg {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    
+        img {
+          padding: 20px;
+        }
+        p {
+        
+            padding: 20px;
+          font-size: 0.7em;
+         
+        }
+      }
+    }
+    @include respond-to("small") {
+    
+    .form {
+        padding-top: 1em;
+        background: map-get($color-defs, form);
+        border: 5px solid map-get($color, bright);
+        text-align: center;
+    
+        /* Input fields */
+        input[type="text"] {
+            width: 250px;
+            padding: 0.3em;
+            margin: 0.3em;
+            border-radius: 0.5em;
+            border-style: none;
+            border: 1px solid grey;
+        }
+    
+        /* Desktop version */
+        @include respond-to("large") {
+            /* Replace border with image */
+            border: none;
+            background: url("../img/paralax.jpg");
+            min-height:200px ;
+            /* Increase input field size */
+            input[type="text"] {
+                width: 350px;
+            }
+        }
+    
+      
+    
+    
+}
+    }

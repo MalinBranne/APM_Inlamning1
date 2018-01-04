@@ -6,24 +6,22 @@
 /// Text setup
 $text: (
   body: ('Barlow', sans-serif),
-  body-weight: 400,
+ 
   body-size: 20pt,
-  headline: ('Spectral SC', serif),
-  headline-weight: 600,
-  headline-size: 20pt,
+  headline:('Brush Script MT', cursive),
+  headline-weight: 100,
+  
   headline-size-big: 40pt,
-  cite: ('Indie Flower', cursive),
-  cite-weight: 400,
-  cite-size: 30pt,
-  cite-size-big: 50pt,
+  
+  
 ) !default;
 
 
 /// COLORS map
 $color: (
-  main: #EFECCA,
+  main: rgb(255, 255, 255),
   accent1: #F1BB87,
-  accent2: #F78E69,
+  accent2: #F6A78B,
   accent3: #5D675B,
   accent4: #B6D7B9,
   accent5: #102542,
@@ -39,16 +37,14 @@ $color-defs: (
   text: map-get($color, dark),
   link: map-get($color, accent2),
 
-  header: map-get($color, accent5),
+  header: map-get($color, accent2),
   header-text: map-get($color, bright),
 
-  footer: map-get($color, accent5),
-  footer-text: map-get($color, bright),
-
+ 
   form: map-get($color, main),
 
-  button-default: map-get($color, accent4),
-  button-default-text: map-get($color, bright),
+  button-default: map-get($color, bright),
+  button-default-text: map-get($color,accent3),
 
   input-field: map-get($color, bright),
   input-field-text: map-get($color, dark),
