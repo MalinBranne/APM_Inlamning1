@@ -35,6 +35,7 @@ button {
     border-radius: 0.5em;
     border-style: none;
     border: 1px solid grey;
+    color: grey;
   }
 }
 
@@ -56,9 +57,26 @@ button {
   }
 
   /* Replace border with image */
-
+  .form {
+    @include page-bg("/img/header.jpg");
+  }
   /* Increase input field size */
   .form input[type="text"] {
     width: 350px;
+  }
+
+  .login {
+    padding: 100px;
+    .form input[type="text"] {
+      width: 350px;
+    }
+  }
+  .login {
+    display: flex;
+  }
+
+  input {
+    border-radius: 40px;
+    padding: 10px;
   }
 }
